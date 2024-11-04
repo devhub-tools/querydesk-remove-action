@@ -1,4 +1,4 @@
-name: Remove Database Client
+name: Remove QueryDesk Database
 description: Automate setting up a database client using devhub.sh so your team has instant access for debugging and testing.
 
 branding:
