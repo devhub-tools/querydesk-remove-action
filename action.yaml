@@ -1,20 +1,20 @@
 name: Remove Database Client
-description: Automate setting up a database client using querydesk.com so your team has instant access for debugging and testing.
+description: Automate setting up a database client using devhub.sh so your team has instant access for debugging and testing.
 
-branding: 
+branding:
   icon: database
   color: blue
-  
+
 inputs:
   api-key:
-    description: API key from settings on https://app.querydesk.com
+    description: API key from settings on https://app.devhub.sh
     required: true
   id:
     description: The id that was used to create the database connection.
     required: true
   host:
     description: The host to make the api call to.
-    default: api.querydesk.com
+    default: api.devhub.sh
 
 runs:
   using: composite
@@ -22,6 +22,6 @@ runs:
     - name: Remove Database Client
       shell: bash
       run: |
-        curl -X DELETE https://${{ inputs.host }}/v1/databases/${{ inputs.id }} \
+        curl -X DELETE https://${{ inputs.host }}/querydesk/v1/databases/remove/${{ inputs.id }} \
           -H "x-api-key: ${{ inputs.api-key }}" \
           --fail
