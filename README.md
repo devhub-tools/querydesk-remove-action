@@ -1,6 +1,6 @@
 # Remove Database Client (QueryDesk)
 
-Automate setting up a database client using https://devhub.sh so your
+Automate setting up a database client using https://devhub.tools so your
 team has instant access for debugging and testing.
 
 This action allows you to cleanup connections that were previously created.
@@ -26,7 +26,7 @@ jobs:
 ## Inputs
 
 -   `api-key`: (Required) You will need to create an API key on
-    https://app.devhub.sh/settings?tab=api_keys and save it as a secret in GitHub
+    https://app.devhub.tools/settings?tab=api_keys and save it as a secret in GitHub
     Actions settings.
 
     Example API key:

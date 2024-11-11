@@ -1,5 +1,5 @@
 name: Remove QueryDesk Database
-description: Automate setting up a database client using devhub.sh so your team has instant access for debugging and testing.
+description: Automate setting up a database client using devhub.tools so your team has instant access for debugging and testing.
 
 branding:
   icon: database
@@ -7,14 +7,14 @@ branding:
 
 inputs:
   api-key:
-    description: API key from settings on https://app.devhub.sh
+    description: API key from settings on https://app.devhub.tools
     required: true
   id:
     description: The id that was used to create the database connection.
     required: true
   host:
     description: The host to make the api call to.
-    default: api.devhub.sh
+    default: api.devhub.tools
 
 runs:
   using: composite
